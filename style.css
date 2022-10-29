@@ -1,0 +1,70 @@
+:root{
+    --colorWhite: white;
+    --colorBlack: black;
+    --colorPurple1:#ac0fd7 ;
+    --colorPurple2:#872184;
+    --colorPurple3:#d121ec;
+    --colorPurple4:#6a1267;
+    --colorBlue1:#8428cc ;
+    --colorBlue2:#6b29b3 ;
+    --colorBlue3:#663ca0 ;
+    --colorBlue4:#261673 ;
+
+
+}
+body{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(30rad, var(--colorPurple1), var(--colorPurple2), var(--colorBlue3), var(--colorBlue3), var(--colorBlue4));
+}
+.sectionHeader1{
+    display: flex;
+}
+.titulo{
+    letter-spacing:-0.2rem;
+    color: white;
+    font-family: 'Diplomata SC', cursive;
+    font-size: 2rem;
+}
+.logo{
+    height: 8rem;
+    margin: 2rem 0 0 2rem;
+}
+
+.sectionHeader2{
+    display: flex;
+    font-family: 'Bungee Outline', cursive;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.div1 li{
+    list-style: none;
+}
+.subtitulo{
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 2rem;
+    top: 5rem;
+    text-align: center;
+    align-items: center;
+}
+.camiseta{
+    width: 100%;
+    height: 15rem;
+    border: 0.5rem solid var(--colorPurple3);
+    border-radius: 0.8rem;
+    padding-top: 1rem;
+}
