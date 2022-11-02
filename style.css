@@ -17,19 +17,23 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: black;
+    color: var(--colorWhite);
 }
 header{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(30rad, var(--colorPurple1), var(--colorPurple2), var(--colorBlue3), var(--colorBlue3), var(--colorBlue4));
+    /* background: linear-gradient(30rad, var(--colorPurple1), var(--colorPurple2), var(--colorBlue3), var(--colorBlue3), var(--colorBlue4)); */
+    background: var(--colorBlack);
 }
 .sectionHeader1{
     display: flex;
 }
 .titulo{
     color: white;
-    font-family: 'Kaushan Script', cursive;
+    font-family: fantasy, cursive;
     font-size: 3rem;
+    font-weight: 100;
 }
 .subtitulo{
     font-size: 2.5rem;
@@ -41,13 +45,23 @@ header{
     height: 8rem;
     margin: 2rem 0 0 2rem;
 }
+.flechas1{
+    width: 14rem;
+    position: absolute;
+    left: -3rem;
+    top: 20%;
+}
+.flechas2{
+    display: none;
+}
 .sectionHeader2{
     margin-top: 5rem;
+    margin-left: 5rem;
     display: flex;
     font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
     color: white;
     font-size: 1.6rem;
-    font-weight: bold;
 }
 .div1{
     margin-left: 2rem;
@@ -59,13 +73,18 @@ header{
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 2rem;
-    top: 5rem;
+    right: 3rem;
+    top: 4rem;
     text-align: center;
     align-items: center;
     margin-right: 5rem;
 }
+.div2 h3{
+    padding: 0;
+    margin: 0;
+}
 .camiseta{
+    background-color: var(--colorWhite);
     margin-top: -2rem;
     width: 100%;
     height: 15rem;
@@ -91,14 +110,14 @@ header{
     background-size: 300%;
     border-radius: 30px;
     z-index: 1;
-   }
+}
    
-   .button1:hover {
+.button1:hover {
     animation: ani 8s linear infinite;
     border: none;
-   }
+}
    
-   @keyframes ani {
+@keyframes ani {
     0% {
      background-position: 0%;
     }
@@ -106,9 +125,9 @@ header{
     100% {
      background-position: 400%;
     }
-   }
+}
    
-   .button1:before {
+.button1:before {
     content: '';
     position: absolute;
     top: -5px;
@@ -120,41 +139,53 @@ header{
     background-size: 400%;
     border-radius: 35px;
     transition: 1s;
-   }
+}
    
-   .button1:hover::before {
+.button1:hover::before {
     filter: blur(20px);
-   }
+}
    
-   .button1:active {
+.button1:active {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
-   }
+}
 
-   @media(max-width: 1040px){
+
+footer{
+    background-color: grey;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media(max-width: 1080px){
     header{
         text-align: center;
     }
-
-    .sectionHeader1{
-        padding-left: 3rem;
-    }
     .sectionHeader2{
         display: block;
-        text-align: left;
+        margin-left: 0;
         line-height: 2rem;
         font-size: 1.3rem;
+        font-weight: bold;
         margin-top: 0;
+    }
+    .flechas2{
+        display: block;
+        width: 14rem;
+        position: absolute;
+        right: -1rem;
+        top: 20%;
     }
     .div1{
         margin-left: -2rem;
         text-align: center;
-        color: black;
     }
     .div2{
-        display: flex;
         position:relative;
-        margin-top: -5rem;
-        margin-left: 8rem;
+        padding: 0;
+        margin: -3rem 0 0 6rem;
     }
     .logo{
         margin-top: 0;
@@ -171,5 +202,19 @@ header{
     .camiseta{
         width: 200px;
     }
-    
-   }
+    main{
+        background-color: var(--colorBlack);
+        width: 100%;
+        height: 21vh;
+    }
+}
+
+@media(max-width: 740px){
+        .flechas1,
+        .flechas2{
+            display: none;
+        }
+        .sectionHeader2{
+            margin: 0;
+        }
+}

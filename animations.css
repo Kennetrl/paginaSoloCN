@@ -1,0 +1,141 @@
+.spinner {
+    --accent: fuchsia;
+    --max-scale: 10;
+    --speed: 0.2;
+    display: flex;
+    gap: 0.3em;
+    transform: skew(15deg, 10deg);
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+   }
+.spinner2 {
+    --accent: rgb(129, 28, 253);
+    --max-scale: 10;
+    --speed: 0.2;
+    display: flex;
+    gap: 0.3em;
+    transform: skew(15deg, 10deg);
+    position: absolute;
+    top: 10%;
+    right: 2%;
+   }
+   .spinner span,
+   .spinner2 span {
+    display: block;
+    background-color: var(--accent);
+    box-shadow: 1px 1px 5px 0.2px var(--accent);
+    width: 0.7px;
+    height: 0.6em;
+   }
+   
+   .spinner .spinner-part-0,
+   .spinner2 .spinner-part-0 {
+    animation: load432 calc(1s/var(--speed)) linear infinite;
+   }
+   
+   .spinner .spinner-part-1,
+   .spinner2 .spinner-part-1 {
+    animation: load432 calc(0.16s/var(--speed)) linear infinite;
+   }
+   
+   .spinner .spinner-part-2,
+   .spinner2 .spinner-part-2 {
+    animation: load432 calc(0.4s/var(--speed)) linear infinite;
+   }
+   
+   .spinner .spinner-part-3,
+   .spinner2 .spinner-part-3 {
+    animation: load432 calc(0.5s/var(--speed)) linear infinite;
+   }
+   
+   @keyframes load432 {
+    50% {
+     transform: scaleY(var(--max-scale));
+    }
+   }
+
+
+
+/*El tercero*/
+.spinner3 {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+   }
+   .spinner4 {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+   }
+   .spinner5 {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    right: 40%;
+   }
+   .loader {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+   }
+   
+   .loader::before,
+   .loader::after {
+    content: '';
+    border: 3px solid #505065;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 1;
+   }
+   
+   .l1::before,
+   .l1::after {
+    animation: clockwiseZ 2.5s infinite;
+   }
+   
+   .l2::after,
+   .l2::before {
+    animation: anticlockwiseZ 2.5s infinite;
+   }
+   
+   @keyframes clockwiseZ {
+    0%, 100% {
+     transform: rotateY(0);
+    }
+   
+    50% {
+     transform: rotateY(180deg) skew(-10deg, -5deg);
+    }
+   }
+   
+   @keyframes anticlockwiseZ {
+    0%, 100% {
+     transform: rotateX(0);
+    }
+   
+    50% {
+     transform: rotateX(-180deg) skew(10deg, 5deg);
+    }
+   }
+
+   @media(max-width: 1080px){
+    .spinner3,
+    .spinner4,
+    .spinner5{
+        display: none;
+    }
+}
