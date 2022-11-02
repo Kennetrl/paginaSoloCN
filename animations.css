@@ -94,7 +94,7 @@
    .loader::before,
    .loader::after {
     content: '';
-    border: 3px solid #505065;
+    border: 3px solid #ffffff;
     border-radius: 50%;
     width: inherit;
     height: inherit;
