@@ -28,6 +28,12 @@ header{
 }
 .sectionHeader1{
     display: flex;
+    align-items: center;
+    margin-top: -2rem;
+}
+.titulo1{
+    font-size: 4rem;
+    margin-left: 20%;
 }
 .titulo{
     color: white;
