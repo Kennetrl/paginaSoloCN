@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 :root{
     --colorWhite: white;
     --colorBlack: black;
@@ -29,15 +30,17 @@ header{
 .sectionHeader1{
     display: flex;
     align-items: center;
-    margin-top: -2rem;
+    
 }
 .titulo1{
-    font-size: 4rem;
-    margin-left: 20%;
+    font-size: 4.5rem;
+    font-family: 'Courgette';
+    font-weight: 100;
+    margin-left: 2rem;
 }
 .titulo{
     color: white;
-    font-family: fantasy, cursive;
+    font-family: fantasy;
     font-size: 3rem;
     font-weight: 100;
 }
@@ -71,6 +74,7 @@ header{
 }
 .div1{
     margin-left: 2rem;
+    margin-top: 3rem;
 }
 .div1 li{
     list-style: none;
@@ -116,6 +120,7 @@ header{
     background-size: 300%;
     border-radius: 30px;
     z-index: 1;
+    margin-left: -4rem;
 }
    
 .button1:hover {
@@ -158,7 +163,7 @@ header{
 
 footer{
     background-color: grey;
-    width: 100%;
+
     font-size: 1rem;
     text-align: center;
     padding: 1rem;
@@ -168,6 +173,17 @@ footer{
 @media(max-width: 1080px){
     header{
         text-align: center;
+        height: 120vh;
+    }
+    .titulo1{
+        margin: 2rem 0 1rem 0;
+    }
+    .sectionHeader1{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin-top: 4rem;
     }
     .sectionHeader2{
         display: block;
@@ -216,6 +232,9 @@ footer{
 }
 
 @media(max-width: 740px){
+    header{
+        height: 140vh;
+    }
         .flechas1,
         .flechas2{
             display: none;
