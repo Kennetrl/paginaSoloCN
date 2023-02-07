@@ -78,8 +78,9 @@ header{
     font-size: 1.6rem;
 }
 .div1{
-    margin-left: 2rem;
+    margin-left: 10%;
     margin-top: 3rem;
+
 }
 .div1 li{
     list-style: none;
@@ -93,6 +94,7 @@ header{
     text-align: center;
     align-items: center;
     margin-right: 5rem;
+    margin-top: 5rem;
 }
 .div2 h3{
     padding: 0;
@@ -176,6 +178,7 @@ main{
 }
 main h2{
     font-size: 3rem;
+    margin-left: 5%;
 }
 section{
     display: flex;
@@ -248,6 +251,7 @@ footer{
         position:relative;
         padding: 0;
         margin: -3rem 0 0 6rem;
+        margin-top: 0rem;
     }
     .logo{
         margin-top: 0;
@@ -272,7 +276,8 @@ footer{
     }
     .mapa{
         position: relative;
-        margin: 0;
+
+        margin-left: -3rem;
     }
     .mainDiv2{
         width: 20rem;
